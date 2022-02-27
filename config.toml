@@ -1,0 +1,35 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "PHP in the Wild"
+theme = "hello-friend-ng"
+paginate = 5
+
+[taxonomies]
+  category = "blog"
+  tag      = "tags"
+  series   = "series"
+
+[params]
+  homeSubtitle = "I ride dragons with PHP, horses with JavaScript, and donkey with CSS"
+  utama = "zaim."
+
+[[params.social]]
+  name = "linkedin"
+  url = "https://www.linkedin.com/in/zaimazhar/"
+
+# And you can even create generic menu
+[[menu.main]]
+  identifier = "blog"
+  name       = "Blog"
+  url        = "/posts"
+  
+[[menu.main]]
+  identifier = "home"
+  name       = "Aome"
+  url        = "/"
+
+
+# [[menu.main]]
+#   identifier = "makan"
+#   name       = "Makan"
+#   url        = "/makan"
