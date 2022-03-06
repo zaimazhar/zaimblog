@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Blog on PHP in the Wild</title>
-    <link>http://example.org/blog/</link>
+    <link>https://zaimblog-669aa.web.app/blog/</link>
     <description>Recent content in Blog on PHP in the Wild</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="http://example.org/blog/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="https://zaimblog-669aa.web.app/blog/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

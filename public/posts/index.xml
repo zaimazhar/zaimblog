@@ -1,0 +1,51 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Posts on PHP in the Wild</title>
+        <link>https://zaimblog-669aa.web.app/posts/</link>
+        <description>Recent content in Posts on PHP in the Wild</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Sun, 27 Feb 2022 00:50:16 +0800</lastBuildDate>
+        <atom:link href="https://zaimblog-669aa.web.app/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Welcome</title>
+            <link>https://zaimblog-669aa.web.app/posts/welcome/</link>
+            <pubDate>Sun, 27 Feb 2022 00:50:16 +0800</pubDate>
+            
+            <guid>https://zaimblog-669aa.web.app/posts/welcome/</guid>
+            <description>Introduction Welcome.
+This would be my first ever writing in this blog. Well, then, obviously I owe you an introduction.
+My name is Muhammad Zaim, you can just call me Zaim for short.
+A lean guy with average height of Malaysian men. I was born on the 90s, grew in Malaysia and codes a lot.
+Career Early in my career, I was thought of working in the semiconductor industry. I couldn&amp;rsquo;t care less since I&amp;rsquo;m kinda working in some areas that actually included semiconductor (The CPU I used for programming for example).</description>
+            <content type="html"><![CDATA[<h2 id="introduction">Introduction</h2>
+<p>Welcome.</p>
+<p>This would be my first ever writing in this blog. Well, then, obviously I owe you an introduction.</p>
+<p>My name is <strong>Muhammad Zaim</strong>, you can just call me <strong>Zaim</strong> for short.</p>
+<p>A lean guy with average height of Malaysian men. I was born on the 90s, grew in Malaysia and codes a lot.</p>
+<h2 id="career">Career</h2>
+<p>Early in my career, I was thought of working in the semiconductor industry. I couldn&rsquo;t care less since I&rsquo;m kinda working in some areas that actually included semiconductor (The CPU I used for programming for example).</p>
+<p>I was yearning to work for companies like Intel or Celestica, because both are near to my hometown.</p>
+<p>I took Computer Engineering course during my endeavours, that explained why I keep bragging about getting into the semiconductor industry from the start.</p>
+<p>As I progress into the course, I found myself to be fond with software technologies. When I started learning about databases and Linux distributions during my studies, the topics was deeply immersed inside my head.</p>
+<p>A more software-related courses ensued and I am keen to land a job doing software development. That&rsquo;s the summary of how I was so intrigued about softwares.</p>
+<h2 id="what-i-do-exactly">What I Do Exactly?</h2>
+<p>I do <em>programming</em> and stuff, particularly on <em>website development</em>. I found website as a piece of software that transcends across different devices and machines.</p>
+<p>Making good and useful softwares have always been my priority and will always put me on shaky position if I could not deliver one.</p>
+<p>I am also an <em>advocate of programming best practices</em>, simply means I will not take it lightly if I couldn&rsquo;t understand the code that I write without any further and thorough explanation about it.</p>
+<p>Most of the time, I deal with PHP code and you could say I am familiar with the <strong>$$$</strong> 😎.</p>
+<h2 id="past-works">Past Works</h2>
+<p>I have done quite a number of projects in the past, you can check my <a href="https://github.com/zaimazhar">GitHub</a> account to check some of them.</p>
+<p>Most of my monetary related projects are private, there could be nothing much expectation from freelancing projects. It is understandable, no business wants their competitors to get a look into their source code anyway.</p>
+<h2 id="last-words">Last Words</h2>
+<p>I appreciate if you made it to here, I am thankful with the journey I have went through from the start of the COVID-19 pandemic up to this point of my life. I have always stepped on the right rocks since, from meeting one random person to collaborate on a startup, to meeting a group of other developers, making money along the way, until I have landed a job as a software engineer.</p>
+<p>I couldn&rsquo;t express the surreal feeling, it&rsquo;s like the path was paved little by little by Allah to make my life better by each day 🤲. I went through much, happy, sad, depress, everything.</p>
+<p>I have met a lot of amazing people, and I want to apologize to any of them if I ever hurt them in any form. 🙏</p>
+<p>I have nothing left to say, I&rsquo;ll left it on here and continue my writing later.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#66d9ef">echo</span> <span style="color:#e6db74">&#34;Thank you for reading my first blog!, have a nice day.&#34;</span>;
+</code></pre></div>]]></content>
+        </item>
+        
+    </channel>
+</rss>
