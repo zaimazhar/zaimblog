@@ -6,7 +6,25 @@
     <description>Recent content in tutorial on PHP in the Wild</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 27 Feb 2022 00:50:16 +0800</lastBuildDate><atom:link href="https://zaimblog-669aa.web.app/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 17 Mar 2022 09:23:23 +0800</lastBuildDate>
+    
+	<atom:link href="https://zaimblog-669aa.web.app/tags/tutorial/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Laravel 8 Add Custom Class Facades</title>
+      <link>https://zaimblog-669aa.web.app/posts/laravel-8-add-custom-class-facades/</link>
+      <pubDate>Thu, 17 Mar 2022 09:23:23 +0800</pubDate>
+      
+      <guid>https://zaimblog-669aa.web.app/posts/laravel-8-add-custom-class-facades/</guid>
+      <description>So, you are having a good time crafting your application using Laravel.
+Not just that, you keep using the facade feature of existing classes.
+As your application grows, somewhere in the timeline you will need to integrate custom services.
+However&amp;hellip;
+The facade feature has been convenient to you, so how do we turn our custom classes into facade?
+Laravel, to the rescue! (again) Laravel is an extensible framework allowing you to plug in and out, disable here and there, configure now and then.</description>
+    </item>
+    
     <item>
       <title>Welcome</title>
       <link>https://zaimblog-669aa.web.app/posts/welcome/</link>

@@ -5,8 +5,119 @@
         <description>Recent content in Posts on PHP in the Wild</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>en-us</language>
-        <lastBuildDate>Sun, 27 Feb 2022 00:50:16 +0800</lastBuildDate>
+        <lastBuildDate>Thu, 17 Mar 2022 09:23:23 +0800</lastBuildDate>
         <atom:link href="https://zaimblog-669aa.web.app/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Laravel 8 Add Custom Class Facades</title>
+            <link>https://zaimblog-669aa.web.app/posts/laravel-8-add-custom-class-facades/</link>
+            <pubDate>Thu, 17 Mar 2022 09:23:23 +0800</pubDate>
+            
+            <guid>https://zaimblog-669aa.web.app/posts/laravel-8-add-custom-class-facades/</guid>
+            <description>So, you are having a good time crafting your application using Laravel.
+Not just that, you keep using the facade feature of existing classes.
+As your application grows, somewhere in the timeline you will need to integrate custom services.
+However&amp;hellip;
+The facade feature has been convenient to you, so how do we turn our custom classes into facade?
+Laravel, to the rescue! (again) Laravel is an extensible framework allowing you to plug in and out, disable here and there, configure now and then.</description>
+            <content type="html"><![CDATA[<p>So, you are having a good time crafting your application using Laravel.</p>
+<p>Not just that, you keep using the facade feature of existing classes.</p>
+<p>As your application grows, somewhere in the timeline you will need to integrate custom services.</p>
+<p><em>However</em>&hellip;</p>
+<p>The facade feature has been convenient to you, so how do we turn our custom classes into facade?</p>
+<h2 id="laravel-to-the-rescue-_again_">Laravel, to the rescue! (<em>again</em>)</h2>
+<p>Laravel is an <em>extensible</em> framework allowing you to plug in and out, disable here and there, configure now and then. Basically, you&rsquo;re free to do as you wish.</p>
+<p><a href="https://laravel.com/docs/9.x/facades">Facade</a> included.</p>
+<h2 id="steps">Steps</h2>
+<p>We&rsquo;ll make a custom <code>Payment</code> service and have facade available to the class.</p>
+<h3 id="1-create-custom-class">1. Create Custom Class</h3>
+<p>Personally, I&rsquo;ll create another folder <code>Services</code> in <code>App</code> directory.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">// App/Services/Payment.php
+
+namespace App\Services;
+
+class Payment 
+{
+  public function test(): string
+  {
+    return &#39;Test&#39;;
+  }
+}
+</code></pre></div><h3 id="2-create-custom-provider">2. Create Custom Provider</h3>
+<p>Next, integrating the custom service will need Laravel to recognize the service. Always register your service as provider to keep the pattern clean.</p>
+<p><code>php artisan make:provider ServiceProviders/PaymentProvider</code></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">namespace App\Providers\ServiceProviders;
+
+use App\Services\Payment;
+use Illuminate\Support\ServiceProvider;
+
+class PaymentProvider extends ServiceProvider
+{
+    /**
+     * Register services.
+     *
+     * @return void
+     */
+    public function register()
+    {
+        $this-&gt;app-&gt;bind(&#39;payment&#39;, function () {
+            return new Payment;
+        });
+    }
+}
+
+</code></pre></div><h3 id="3-create-custom-facade">3. Create Custom Facade</h3>
+<p>As there is no command to quickly create a facade class, we&rsquo;ll need to manually create the file.
+Below, I have created a <code>PaymentFacade.php</code> file in the <code>app/Services/Facades</code> directory. Create the directory if you have not done so.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">namespace App\Services\Facades;
+
+use Illuminate\Support\Facades\Facade;
+
+class PaymentFacade extends Facade 
+{
+    protected static function getFacadeAccessor()
+    {
+        return &#39;payment&#39;;
+    }
+}
+</code></pre></div><h3 id="4-register-provider-and-facade">4. Register Provider and Facade</h3>
+<p>We&rsquo;ll have to register both provider and facade so Laravel can bind them to the application.</p>
+<p>Edit your <code>config/app.php</code> to add your newly create provider and facade classes.</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">// config/app.php
+
+&#39;providers&#39; =&gt; [
+  ...
+  App\Providers\EventServiceProvider::class,
+  App\Providers\RouteServiceProvider::class,
+  App\Providers\Services\PaymentProvider::class,
+]
+
+&#39;aliases&#39; =&gt; [
+  ...
+  &#39;Validator&#39; =&gt; Illuminate\Support\Facades\Validator::class,
+  &#39;View&#39; =&gt; Illuminate\Support\Facades\View::class,
+  &#39;Payment&#39; =&gt; App\Services\Facades\PaymentFacade::class,
+]
+</code></pre></div><h3 id="5-import-the-facade">5. Import the Facade</h3>
+<p>Well done!</p>
+<p>Your custom service class is now accessible as facade!</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">// web.php
+
+use Facades\App\Services\Payment;
+
+Route::get(&#39;/check&#39;, function() {
+  dd(Payment::test());
+});
+
+</code></pre></div><h3 id="result">Result</h3>
+
+    <div style="width: 100%; text-align:center;">
+        <img loading="lazy" width="100%" src="./img//facade.png"   />
+    </div>
+
+
+]]></content>
+        </item>
         
         <item>
             <title>Welcome</title>
@@ -43,7 +154,7 @@ Career Early in my career, I was thought of working in the semiconductor industr
 <p>I couldn&rsquo;t express the surreal feeling, it&rsquo;s like the path was paved little by little by Allah to make my life better by each day 🤲. I went through much, happy, sad, depress, everything.</p>
 <p>I have met a lot of amazing people, and I want to apologize to any of them if I ever hurt them in any form. 🙏</p>
 <p>I have nothing left to say, I&rsquo;ll left it on here and continue my writing later.</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php"><span style="color:#66d9ef">echo</span> <span style="color:#e6db74">&#34;Thank you for reading my first blog!, have a nice day.&#34;</span>;
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-php" data-lang="php">echo &#34;Thank you for reading my first blog!, have a nice day.&#34;;
 </code></pre></div>]]></content>
         </item>
         

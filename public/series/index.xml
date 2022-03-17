@@ -5,6 +5,10 @@
     <link>https://zaimblog-669aa.web.app/series/</link>
     <description>Recent content in Series on PHP in the Wild</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://zaimblog-669aa.web.app/series/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language>
+    
+	<atom:link href="https://zaimblog-669aa.web.app/series/index.xml" rel="self" type="application/rss+xml" />
+    
+    
   </channel>
 </rss>

@@ -3,7 +3,9 @@ baseURL = "https://zaimblog-669aa.web.app/"
 languageCode = "en-us"
 title = "PHP in the Wild"
 theme = "hello-friend-ng"
+enableInlineShortcodes = true
 paginate = 5
+images = ['android-chrome-256x256.png']
 
 [taxonomies]
   category = "blog"
@@ -34,7 +36,8 @@ paginate = 5
   
 [[menu.main]]
   identifier = "home"
-  name       = "/home"
+  weight = "1"
+  name       = "home"
   url        = "/"
 
 

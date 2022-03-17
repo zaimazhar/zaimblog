@@ -3,37 +3,42 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://zaimblog-669aa.web.app/tags/coding/</loc>
+    <lastmod>2022-03-17T09:23:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zaimblog-669aa.web.app/posts/laravel-8-add-custom-class-facades/</loc>
+    <lastmod>2022-03-17T09:23:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zaimblog-669aa.web.app/</loc>
+    <lastmod>2022-03-17T09:23:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zaimblog-669aa.web.app/posts/</loc>
+    <lastmod>2022-03-17T09:23:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zaimblog-669aa.web.app/tags/</loc>
+    <lastmod>2022-03-17T09:23:23+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://zaimblog-669aa.web.app/tags/tutorial/</loc>
+    <lastmod>2022-03-17T09:23:23+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://zaimblog-669aa.web.app/tags/career/</loc>
     <lastmod>2022-02-27T00:50:16+08:00</lastmod>
   </url>
   
   <url>
-    <loc>https://zaimblog-669aa.web.app/tags/coding/</loc>
-    <lastmod>2022-02-27T00:50:16+08:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://zaimblog-669aa.web.app/tags/personal/</loc>
-    <lastmod>2022-02-27T00:50:16+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zaimblog-669aa.web.app/</loc>
-    <lastmod>2022-02-27T00:50:16+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zaimblog-669aa.web.app/posts/</loc>
-    <lastmod>2022-02-27T00:50:16+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zaimblog-669aa.web.app/tags/</loc>
-    <lastmod>2022-02-27T00:50:16+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://zaimblog-669aa.web.app/tags/tutorial/</loc>
     <lastmod>2022-02-27T00:50:16+08:00</lastmod>
   </url>
   
