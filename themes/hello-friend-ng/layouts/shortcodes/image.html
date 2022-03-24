@@ -1,5 +1,5 @@
 {{ if .Get "src" }}
     <div style="width: 100%; text-align:center;">
-        <img loading="lazy" width="100%" src="./img/{{ .Get "src" | safeURL }}" {{ with .Get "alt" }} alt="{{ . | plainify }}" {{ end }} {{ with .Get "style" }} {{ end }} />
+        <img loading="lazy" width="100%" src="./images/{{ .Get "src" | safeURL }}" {{ with .Get "alt" }} alt="{{ . | plainify }}" {{ end }} {{ with .Get "style" }} {{ end }} />
     </div>
 {{ end }}

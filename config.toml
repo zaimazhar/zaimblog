@@ -4,13 +4,23 @@ languageCode = "en-us"
 title = "PHP in the Wild"
 theme = "hello-friend-ng"
 enableInlineShortcodes = true
+useRelativeCover = true
 paginate = 5
 images = ['android-chrome-256x256.png']
+
+[author]
+  name = "zaimazhar"
+
+[blackfriday]
+  hrefTargetBlank = true
 
 [taxonomies]
   category = "blog"
   tag      = "tags"
   series   = "series"
+
+[params.logo]
+  logoMark = "$"
 
 [params]
   homeSubtitle = "I ride dragons with PHP, horses with JavaScript, and donkey with CSS"
